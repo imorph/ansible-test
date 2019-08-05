@@ -7,4 +7,4 @@ RUN yum install sudo -y \
     && sudo yum install python-pip -y \
     && sudo pip install --upgrade ansible ansible-lint yamllint
 
-ENTRYPOINT [ "ansible" ]
+CMD [ "bash" ]
